@@ -3,8 +3,9 @@
 </p>
 {items}
 <div class="row">
-    {quantity}
-    {code}
+    {quantity} x
+    <img src="/assets/images/{picture}" title="{description}"/> 
+	
 </div>
 {/items}
 <div class="row">
