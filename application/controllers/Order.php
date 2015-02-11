@@ -73,7 +73,7 @@ class Order extends Application {
 		$this->data['items'] = $this->orders->details($order_num);
 		
 		
-		$this->data['okornot'] = $this->orders->validate($order_num);
+		$this->data['okornot'] = $this->orders->validate($order_num) ? '' : 'disabled';
 
         $this->render();
     }
